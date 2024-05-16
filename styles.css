@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100vh;
+    background: url('bc.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 217, 0.486); /* Warna biru transparan */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow tipis */
+    z-index: -1; /* Mengatur lapisan transparan di belakang konten */
+}
+
+.header-content {
+    z-index: 1;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 255, 0.7); /* Warna biru transparan */
+    padding: 10px 0;
+    position: fixed; /* Mengatur posisi tetap di bagian atas saat di-scroll */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Mengatur lapisan paling atas */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.wedding-date {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
